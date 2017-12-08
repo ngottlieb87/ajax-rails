@@ -26,3 +26,6 @@ To set up:
 * Removed gemfile.lock and rebundled to fix migration error for add accounts table.
 
 * Checked All models before migration to check relations.
+  -Add relations for accounts and orders
+  -Received error on migration and reverted back to [5.0]
+  -Migrated Successfully
