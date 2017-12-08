@@ -3,7 +3,7 @@ class Order < ApplicationRecord
   belongs_to :account, optional: true
 
   before_save :calculate_total
-  before_save :finalize
+
 
   def calculate_total
     self.total_price = order_items.collect { |item| item.product.price * item.quantity }.sum

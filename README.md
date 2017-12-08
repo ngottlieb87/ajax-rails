@@ -34,3 +34,11 @@ To set up:
   -Add destroy to top of seed for clearing database
   -Removed Faker implementation and implemented correct faker for products.
   -Seeded successfully.
+
+* Launched site successfully and reverted to jquery_ujs and removed rails_ujs.
+
+* Fix bcrypt authentication
+ - Add user to new in user controller to generate a new user.
+ - On create added the creation of a new account for user.
+ - Added flash notice for user when successfully signup or failing to signup.
+ - Refactored Sign up and sign in successfully.

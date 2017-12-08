@@ -1,11 +1,16 @@
 class OrderItemsController < ApplicationController
 
   def create
+    @order_items = current_order.order_items
     @order = current_order
     @item = @order.order_items.new(item_params)
     @order.save
     session[:order_id] = @order.id
-    redirect_to products_path
+    # redirect_to products_path
+    respond_to do |format|
+        format.html { redirect_to '/' }
+        format.js
+    end
   end
 
   def update
