@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
 
   def show
+
     if current_user
       @previous_orders = current_user.previous_orders
     end

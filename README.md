@@ -42,3 +42,7 @@ To set up:
  - On create added the creation of a new account for user.
  - Added flash notice for user when successfully signup or failing to signup.
  - Refactored Sign up and sign in successfully.
+
+ * Implementing ajax
+ - User can see there cart update with order item without page reload
+ 
