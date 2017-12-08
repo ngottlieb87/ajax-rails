@@ -45,4 +45,6 @@ To set up:
 
  * Implementing ajax
  - User can see there cart update with order item without page reload
- 
+
+ * Refactor Checklist
+ - Quantity numberfield only accepts positive numbers
