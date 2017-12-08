@@ -10,7 +10,7 @@ class Order < ApplicationRecord
   end
 
   def finalize(user)
-    self.user_id = user.id
+    self.account_id = user.id
     self.status = 2
     self.save
   end
