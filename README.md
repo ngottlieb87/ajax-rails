@@ -28,4 +28,9 @@ To set up:
 * Checked All models before migration to check relations.
   -Add relations for accounts and orders
   -Received error on migration and reverted back to [5.0]
-  -Migrated Successfully
+  -Migrated successfully
+
+* Fix seed file
+  -Add destroy to top of seed for clearing database
+  -Removed Faker implementation and implemented correct faker for products.
+  -Seeded successfully.
