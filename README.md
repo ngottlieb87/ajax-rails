@@ -19,3 +19,8 @@ To set up:
 
 * First I checked the gemfile to see if there were any missing gems I would need for thorough testing and launching the application
   -- I added: shoulda-matchers, rspec-rails, capybara, factory-bot, simplecov and faker
+
+* Next I checked the db for any inconsistencies
+  -- removed added migrations and added them to there respected tables, changed AR Migration version from [5.0]->[5.1]. Also added admin to users table, created a account table for user_id. Added popper to application.js.
+
+* Removed gemfile.lock and rebundled to fix migration error for add accounts table.
