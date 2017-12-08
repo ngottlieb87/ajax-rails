@@ -1,8 +1,9 @@
 class Order < ApplicationRecord
   has_many :order_items
-  belongs_to :user, optional: true
+  belongs_to :account, optional: true
 
   before_save :calculate_total
+  before_save :finalize
 
   def calculate_total
     self.total_price = order_items.collect { |item| item.product.price * item.quantity }.sum

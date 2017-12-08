@@ -24,3 +24,5 @@ To set up:
   -- removed added migrations and added them to there respected tables, changed AR Migration version from [5.0]->[5.1]. Also added admin to users table, created a account table for user_id, fixed total price in orders table to include total_price as a decimal. Added popper to application.js. Added Model for Accounts and its relations.
 
 * Removed gemfile.lock and rebundled to fix migration error for add accounts table.
+
+* Checked All models before migration to check relations.
