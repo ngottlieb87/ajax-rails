@@ -1,15 +1,12 @@
 class OrderItemsController < ApplicationController
 
   def create
-    @account = Account.find(current_user.id)
     @order_items = current_order.order_items
-    @previous_orders = current_user.previous_orders
     @order = current_order
     @item = @order.order_items.new(item_params)
     @ajax_display = current_order.order_items.length
     @order.save
     session[:order_id] = @order.id
-    redirect_to products_path
     respond_to do |format|
         format.html { redirect_to '/' }
         format.js
