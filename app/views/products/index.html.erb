@@ -4,19 +4,14 @@
     <%= link_to "Add New Product", new_product_path(@product)%>
   </div>
 <%end%>
-<div class="row" >
+<div class="row">
   <div class="section">
     <% @products.each do |product| %>
       <div class="col s4">
-        <%= image_tag(product.photo.url(:medium)) %>
+      <%= link_to image_tag(product.photo.url(:medium)), product_path(product), remote: true%>
         <h4><%= product.name %></h4>
-        <p><%= product.description %></p>
         <p><%= number_to_currency product.price %></p>
-        <%= form_for @order_item, remote: true  do|f| %>
-          <%= f.hidden_field :product_id, value: product.id %>
-          <%= f.number_field :quantity, min: 1, placeholder: "Oops, breaks if you don't add input!" %>
-          <span class="waves-effect waves-light btn"><%= f.submit "Add to cart"%></span>
-        <% end %>
+        <div id="display<%= product.id %>"></div>
       </div>
     <% end %>
   </div>

@@ -46,7 +46,7 @@ To set up:
  * Implementing ajax
  - User can see there cart update with order item without page reload
  - User can delete an item from there cart without page load but total price does not update at this time.
-
+ - In process of displaying form and description below image.
  * Refactor Checklist
  - Quantity numberfield only accepts positive numbers
  - As an Admin you can add a product
@@ -54,9 +54,10 @@ To set up:
  - Paperclip successfully implemented for products and seeding.
 
 
+
  ## Setup
 
-1. open terminal navigate to desired download location (ex. `cd desktop`) and enter: </br>`git clone https://github.com/ngottlieb87/marios_specialty_foods`
+1. open terminal navigate to desired download location (ex. `cd desktop`) and enter: </br>`git clone https://github.com/ngottlieb87/ajax-rails`
 
 2. Navigate to the root of the project directory and enter the following commands in the terminal:
   * `bundle install`

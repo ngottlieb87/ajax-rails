@@ -16,11 +16,10 @@ Product.destroy_all
 
 
 20.times do |index|
-  photo = URI.parse(Faker::LoremPixel.image)
   Product.create!(name: Faker::Commerce.product_name,
                   price: rand(10...100),
                   description: Faker::Lorem.sentence(5, false,0).chop,
-                  photo: photo)
+                  photo: URI.parse(Faker::LoremPixel.image))
 
 end
 
