@@ -46,7 +46,8 @@ To set up:
  * Implementing ajax
  - User can see there cart update with order item without page reload
  - User can delete an item from there cart without page load but total price does not update at this time.
- - In process of displaying form and description below image.
+ - Form and description display when user clicks image
+
  * Refactor Checklist
  - Quantity numberfield only accepts positive numbers
  - As an Admin you can add a product
