@@ -4,8 +4,8 @@ class OrderItemsController < ApplicationController
     @order_items = current_order.order_items
     @order = current_order
     @item = @order.order_items.new(item_params)
-    @ajax_display = current_order.order_items.length
     @order.save
+    flash[:notice] = "Product added to cart"
     session[:order_id] = @order.id
     respond_to do |format|
         format.html { redirect_to '/' }
