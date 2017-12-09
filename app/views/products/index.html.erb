@@ -9,7 +9,7 @@
     <% @products.each do |product| %>
       <div class="col s4">
       <%= link_to image_tag(product.photo.url(:medium)), product_path(product), remote: true%>
-        <h4><%= product.name %></h4>
+        <h4><%= link_to product.name, product_path(product), remote: true %></h4>
         <p><%= number_to_currency product.price %></p>
         <div class= "description" id="display<%= product.id %>">
           <p><%= product.description %><p>
