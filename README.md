@@ -48,3 +48,4 @@ To set up:
 
  * Refactor Checklist
  - Quantity numberfield only accepts positive numbers
+ - As an Admin you can add a product and a flash notice will appear to let you know it was successfully added!

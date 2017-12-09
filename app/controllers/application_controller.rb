@@ -27,6 +27,16 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
-    redirect_to '/sign_in' unless admin
+    if !current_user
+      flash[:alert] = 'Please Sign In To View Product'
+      redirect_to products_path
+    end
+  end
+
+  def authorize_admin
+    if !current_user.admin
+      flash[:alert] = 'You are not an Admin!'
+      redirect_to products_path
+    end
   end
 end
