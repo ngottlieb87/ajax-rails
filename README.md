@@ -45,7 +45,11 @@ To set up:
 
  * Implementing ajax
  - User can see there cart update with order item without page reload
+ - User can delete an item from there cart without page load but total price does not update at this time.
 
  * Refactor Checklist
  - Quantity numberfield only accepts positive numbers
- - As an Admin you can add a product and a flash notice will appear to let you know it was successfully added!
+ - As an Admin you can add a product
+ - As an Admin a flash notice will appear to let you know a product was successfully added!
+ - Paperclip successfully implemented for products and seeding.
+ -
