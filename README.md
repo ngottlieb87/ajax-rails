@@ -52,4 +52,25 @@ To set up:
  - As an Admin you can add a product
  - As an Admin a flash notice will appear to let you know a product was successfully added!
  - Paperclip successfully implemented for products and seeding.
- -
+
+
+ ## Setup
+
+1. open terminal navigate to desired download location (ex. `cd desktop`) and enter: </br>`git clone https://github.com/ngottlieb87/marios_specialty_foods`
+
+2. Navigate to the root of the project directory and enter the following commands in the terminal:
+  * `bundle install`
+  * `rake db:create`
+  * `rake db:migrate`
+  * `rake db:test:prepare`
+  * `rake db:seed`
+
+3. To launch the application type the command while in the root directory:
+  <br>`rails s`
+
+4. Use your favorite browser and in the url type: `localhost:3000`
+
+
+## Languages/Frameworks Used:
+
+  ###### _Ruby on Rails, Ruby, ActiveRecord, PSQL, SCSS, Bootstrap, AJAX_
