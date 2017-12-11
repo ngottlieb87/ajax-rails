@@ -54,6 +54,8 @@ To set up:
  - As an Admin a flash notice will appear to let you know a product was successfully added!
  - Paperclip successfully implemented for products and seeding.
  - Admin can upload a picture for product creation
+ - Add admin product creation to navbar
+ -
 
 
  ## Setup

@@ -7,7 +7,10 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       flash[:alert] = "There was a problem signing in. Please try again."
-      redirect_to '/sign_in'
+      respond_to do |format|
+          format.html { redirect_to '/sigin' }
+          format.js
+        end
     end
   end
 

@@ -19,11 +19,15 @@
           <li><%= link_to "Sign up", 'sign_up' %></li>
           <li><%= link_to "Sign in", '/sign_in' %></li>
         <% end %>
+        <% if is_admin? %>
+          <li><%= link_to "Add New Product", new_product_path(@product)%></li>
+        <% end %>
       </ul>
     </div>
   </nav>
 
   <body>
+
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
     <% end %>
