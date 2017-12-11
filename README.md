@@ -77,4 +77,4 @@ To set up:
 
 ## Languages/Frameworks Used:
 
-  ###### _Ruby on Rails, Ruby, ActiveRecord, PSQL, SCSS, Bootstrap, AJAX_
+  ###### _Ruby on Rails, Ruby, ActiveRecord, PSQL, SCSS, Materialize, AJAX_
