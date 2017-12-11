@@ -55,7 +55,7 @@ To set up:
  - Paperclip successfully implemented for products and seeding.
  - Admin can upload a picture for product creation
  - Add admin product creation to navbar
- -
+ - Admin can delete and edit products
 
 
  ## Setup

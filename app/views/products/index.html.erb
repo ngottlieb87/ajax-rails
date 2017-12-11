@@ -12,6 +12,11 @@
           <%= form_for @order_item, remote: true do|f| %>
             <%= f.hidden_field :product_id, value: product.id %>
             <%= f.number_field :quantity, in: 1..10, placeholder: "Oops, breaks if you don't add input!" %>
+            <p><% if is_admin? %>
+                <%= link_to "Edit", edit_product_path(product) %> |
+                <%= link_to "Delete", product_path(product),
+                    :data=>{:confirm => "Are You Sure?", :method => "delete"}%>
+                <% end %></p>
             <span class="waves-effect waves-light btn"><%= f.submit "Add to cart"%></span>
           <% end %>
         </div>
