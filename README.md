@@ -56,6 +56,7 @@ To set up:
  - Admin can upload a picture for product creation
  - Add admin product creation to navbar
  - Admin can delete and edit products
+ - Password complexity added. Passwords now must have 7-15 characters including at least 1 upper and lower case letter, and 1 digit
 
 
  ## Setup
