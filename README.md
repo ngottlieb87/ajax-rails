@@ -13,9 +13,9 @@ To set up:
 
 # Refactor Rails App with AJAX
 
-## By Noah Gottlieb
+### By Noah Gottlieb
 
-### Refactor Steps
+##### Refactor Steps
 
 * First I checked the gemfile to see if there were any missing gems I would need for thorough testing and launching the application
   -- I added: shoulda-matchers, rspec-rails, capybara, factory-bot, simplecov and faker
@@ -37,26 +37,26 @@ To set up:
 
 * Launched site successfully and reverted to jquery_ujs and removed rails_ujs.
 
-* Fix bcrypt authentication
+##### Fix bcrypt authentication
  - Add user to new in user controller to generate a new user.
  - On create added the creation of a new account for user.
  - Added flash notice for user when successfully signup or failing to signup.
  - Refactored Sign up and sign in successfully.
 
- * Implementing ajax
+##### Implementing ajax
  - User can see there cart update with order item without page reload
  - User can delete an item from there cart without page load but total price does not update at this time.
  - Form and description display when user clicks image
 
- * Refactor Checklist
+##### Refactor Checklist
  - Quantity numberfield only accepts positive numbers
  - As an Admin you can add a product
  - As an Admin a flash notice will appear to let you know a product was successfully added!
  - Paperclip successfully implemented for products and seeding.
  - Admin can upload a picture for product creation
- - Add admin product creation to navbar
+ - Add admin product creation to navbar.
  - Admin can delete and edit products
- - Password complexity added. Passwords now must have 7-15 characters including at least 1 upper and lower case letter, and 1 digit
+ - Password complexity added. Passwords now must have 7-15 characters including at least 1 upper and lower case letter, and 1 digit.
 
 
  ## Setup
